@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block main %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/profile.css') }}" />
+<div class="info">
+    <img src="{{ url_for('static', filename='profilepic.jpg') }}" class="img1"/>
+    <h1>Ashley-Ann Ellison</h1>
+    <h5>@ashA</h5>
+    <h5>Jamaica</h5>
+    <h5>{{ date }}</h5> 
+</div>
+<div class="follow">
+    <p class="para">I am a smart and talented young woman who loves website design and development. 
+        Contact me if you'd like to work together on a new project.</p>
+    <div class="post">
+        <div class="p1">
+            <h3>7</h3>
+            <p>Posts</p>
+        </div>
+        <div class="p1">
+            <h3>100</h3>
+            <p>Following</p>
+        </div>
+        <div class="p1">
+            <h3>250</h3>
+            <p>Followers</p>
+        </div>
+    </div>
+    <button>Follow</button>
+</div>
+{% endblock %}
